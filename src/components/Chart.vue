@@ -1,9 +1,10 @@
 <template>
-<div id="chartDiv">
-
-  <D3PieChart :dataModel="pieData" />
-
-</div>
+    <div>
+        <h2>Vue (D3) - TS</h2>
+        <div id="chartDiv">
+            <D3PieChart :dataModel="pieData" />
+        </div>
+    </div> 
 </template>
 
 <script lang="ts">
@@ -18,20 +19,16 @@ import { D3PieChart } from 'jscatalyst';
     },
 })
 export default class Chart extends Vue {
-      @Prop() private msg!: string;
       @Prop() private pieData!: object;
-
-
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #chartDiv {
-    height: 750px;
-    width: 750px;
-    margin: 0 auto;
-    padding-top: 50px;
-
+    height: 500px;
+    width: 500px;
 }
+
+
 </style>

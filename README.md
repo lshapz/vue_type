@@ -1,5 +1,10 @@
 # vue_type
 
+## Angular component
+
+The angular custom element / web component, found in the public folder as `angular-bar-chart.js`, is a compiled and built version of [this repo](https://github.com/lshapz/angular-webcomponent). 
+
+
 ## Project setup
 ```
 npm install

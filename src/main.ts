@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
+import 'jscatalyst/dist/jscatalyst.min.css';
 
 Vue.config.productionTip = false;
 

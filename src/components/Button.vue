@@ -1,5 +1,5 @@
 <template>
-  <button @click="changeData">Change Things</button>
+  <button class="changeBtn" @click="changeData">Change Things</button>
 </template>
 
 <script lang="ts">
@@ -15,5 +15,19 @@ export default class Button extends Vue {
   }
 }
 </script>
+<style>
+.changeBtn {
+  font-size: 150%;
+  padding: .5em 1em;
+  border: transparent;
+  background-color: rgba(230, 230, 230, 0.851);
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.changeBtn:active {
+  box-shadow: 5px 10px grey;
+}
 
 </style>
